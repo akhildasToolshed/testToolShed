@@ -6,19 +6,21 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialModule}  from './material/material.module';
 import { MainNavComponent } from './shared/main-nav/main-nav.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ErrorPageComponent } from './shared/error-page.component';
 
 
 //import { UsernameValidatorDirective } from './logiModule/username-validator.directive';
 
 @NgModule({
   declarations: [
-    AppComponent,MainNavComponent,  //UsernameValidatorDirective
+    AppComponent,MainNavComponent, ErrorPageComponent,  //UsernameValidatorDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
