@@ -4,11 +4,12 @@ import { LoginComponentComponent } from './login-component/login-component.compo
 import  {LoginRoutingModule} from './login-routing.module';
 import { SignupComponent } from './signup/signup.component'; 
 import {MaterialModule}  from '../material/material.module';
-import { ReactiveFormsModule } from '@angular/forms'; 
+import { ReactiveFormsModule } from '@angular/forms';
+import { UsernameValidatorDirective } from './username-validator.directive'; 
 
 
 @NgModule({
-  declarations: [LoginComponentComponent, SignupComponent],
+  declarations: [LoginComponentComponent, SignupComponent, UsernameValidatorDirective],
   imports: [
     CommonModule,
     LoginRoutingModule,

@@ -7,9 +7,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialModule}  from './material/material.module';
 import { MainNavComponent } from './shared/main-nav/main-nav.component';
 
+
+//import { UsernameValidatorDirective } from './logiModule/username-validator.directive';
+
 @NgModule({
   declarations: [
-    AppComponent,MainNavComponent
+    AppComponent,MainNavComponent,  //UsernameValidatorDirective
   ],
   imports: [
     BrowserModule,
