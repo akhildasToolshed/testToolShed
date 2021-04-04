@@ -1,1 +1,97 @@
-<p>signup works!</p>
+<!-- Material form register -->
+<mdb-card>
+
+    <mdb-card-header class="info-color white-text text-center py-4">
+      <h5>
+        <strong>Sign up</strong>
+      </h5>
+    </mdb-card-header>
+  
+    <!--Card content-->
+    <mdb-card-body class="px-lg-5 pt-0">
+
+      <!-- Form -->
+      <form [formGroup]="signupform" (ngSubmit)="submit()" class="text-center" style="color: #757575;">
+  
+        <div class="form-row">
+          <div class="col">
+            <!-- First name -->
+            <div class="md-form">
+              <mat-form-field>
+                <input type="text" matInput placeholder="firstName" formControlName="firstName">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col">
+            <!-- Last name -->
+            <div class="md-form">
+              <mat-form-field>
+                <input type="text" matInput placeholder="lastName" formControlName="lastName">
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+  
+        <!-- E-mail -->
+        <div class="md-form mt-0">
+          <mat-form-field>
+            <input type="email" matInput placeholder="email" formControlName="email">
+          </mat-form-field>
+          </div>
+  
+        <!-- Password -->
+        <div class="md-form">
+          <mat-form-field>
+            <input type="password" matInput placeholder="password" formControlName="password">
+          </mat-form-field>
+          <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+            At least 8 characters and 1 digit
+          </small>
+        </div>
+  
+        <!-- Phone number -->
+        <div class="md-form">
+          <mat-form-field>
+            <input type="text" matInput placeholder="phoneNumber" formControlName="phoneNumber">
+          </mat-form-field>
+        <small id="materialRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+            Optional - for two-step authentication
+          </small>
+        </div>
+  
+        <!-- Newsletter -->
+        <p>or sign up with:</p>
+        <div class="md-form"> 
+        <a type="button" class="light-blue-text mx-2">
+          <mdb-icon fab icon="facebook"></mdb-icon>
+        </a>
+        <a type="button" class="light-blue-text mx-2">
+          <mdb-icon fab icon="twitter"></mdb-icon>
+        </a>
+        <a type="button" class="light-blue-text mx-2">
+          <mdb-icon fab icon="linkedin"></mdb-icon>
+        </a>
+        <a type="button" class="light-blue-text mx-2">
+          <mdb-icon fab icon="heart"></mdb-icon>
+        </a>
+      </div>
+  
+        <hr>
+  
+        <!-- Terms of service -->
+        <p>By clicking
+          <em>Sign up</em> you agree to our
+          <a href="" target="_blank">terms of service</a>. </p>
+
+          
+  <div class="button">
+    <button type="submit" mat-button>Register</button>
+  </div>
+  
+      </form>
+      <!-- Form -->
+  
+    </mdb-card-body>
+  
+  </mdb-card>  
+  <!-- Material form register -->

@@ -23,7 +23,8 @@ export class LoginService {
     return this.currentUserSubject.value;
   }
   login(loginModel :LoginModel) {
-    return this.http.post<UserModel>(`/users/authenticate`, {loginModel})
+    console.log(JSON.stringify(loginModel));
+    return this.http.post<UserModel>(`/authenticate`, JSON.stringify(loginModel),{headers: {'Content-Type': 'application/json'} })
       /*  .pipe(
          map(user => {
             // login successful if there's a jwt token in the response

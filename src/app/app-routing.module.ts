@@ -5,7 +5,7 @@ import { ErrorPageComponent } from './shared/error-page.component';
 
 const routes: Routes = [
  {
-    path : 'user',
+    path : 'auth',
     loadChildren: () => import('./loginModule/login.module').then(m => m.LoginModule)
   },
   {

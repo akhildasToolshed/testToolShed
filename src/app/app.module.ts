@@ -8,6 +8,7 @@ import {MaterialModule}  from './material/material.module';
 import { MainNavComponent } from './shared/main-nav/main-nav.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ErrorPageComponent } from './shared/error-page.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 //import { UsernameValidatorDirective } from './logiModule/username-validator.directive';
@@ -20,7 +21,7 @@ import { ErrorPageComponent } from './shared/error-page.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule,HttpClientModule
+    MaterialModule,HttpClientModule, NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent],

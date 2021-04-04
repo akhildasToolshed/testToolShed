@@ -34,7 +34,7 @@ export class LoginComponentComponent implements OnInit {
     if (this.loginform.valid) {
      // this.submitEM.emit(this.form.value); 
       this.payload.setUsername(this.loginform.get('username').value);
-      this.payload.setUsername( this.loginform.get('password').value);
+      this.payload.setPassword( this.loginform.get('password').value);
       console.log(this.payload.getUsername());
       this.loginService.login(this.payload) .pipe(first())
       .subscribe(

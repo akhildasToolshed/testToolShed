@@ -6,6 +6,16 @@ export class UserModel {
     private lastName: String;
     private token: String;
 
+    private password: String;
+
+    public setPassword(password:String){
+        this.password = password;
+    }
+
+    public getPassword(){
+        return this.password;
+    }
+
     public setToken(token: String){
         this.token= token;
     }
